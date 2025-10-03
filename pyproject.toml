@@ -59,9 +59,9 @@ target-version = ['py39']
 profile = "black"
 line_length = 88
 
-[mypy]
-python_version = 3.11
-disallow_untyped_defs = True
-ignore_missing_imports = True
-strict_optional = True
-pretty = True
+[tool.mypy]
+python_version = "3.11"
+disallow_untyped_defs = true
+ignore_missing_imports = true
+strict_optional = true
+pretty = true

@@ -6,7 +6,7 @@ import os
 from pathlib import Path
 import logging
 
-def ensure_dir(path: str | Path):
+def ensure_dir(path: str | Path) -> Path:
     """
     Ensure that a directory exists. Create it if it doesn't.
 
@@ -21,7 +21,7 @@ def ensure_dir(path: str | Path):
         p.mkdir(parents=True, exist_ok=True)
     return p
 
-def clean_path(path: str | Path):
+def clean_path(path: str | Path) -> Path:
     """
     Normalize and expand a path string.
 
@@ -33,7 +33,7 @@ def clean_path(path: str | Path):
     """
     return Path(os.path.expanduser(os.path.abspath(str(path))))
 
-def setup_logger(log_dir: str = "logs", log_file: str = "kagglefetcher.log", module_name: str | None = None):
+def setup_logger(log_dir: str = "logs", log_file: str = "kagglefetcher.log", module_name: str | None = None) -> logging.Logger:
     """
     Setup logging for a module (file and stream).
 
