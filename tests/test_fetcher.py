@@ -7,7 +7,6 @@ import tempfile
 from kagglefetcher.core import KaggleFetcher, fetch_dataset
 from kagglefetcher.exceptions import DownloadError, MoveError, CleanupError
 
-import builtins
 
 class DummyKHub:
     """Dummy kagglehub replacement for testing."""
