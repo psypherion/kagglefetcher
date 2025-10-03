@@ -24,14 +24,7 @@ Clone and install the package using pip:
 ```bash
 pip install -e 'git+https://github.com/psypherion/kagglefetcher.git#egg=kagglefetcher'
 ```
-
-Or, for editable local development:
-
-```bash
-git clone https://github.com/psypherion/kagglefetcher.git
-cd kagglefetcher
-pip install -e .
-```
+![Installation](example/image.png)
 
 ---
 
@@ -45,6 +38,8 @@ from kagglefetcher import fetch_dataset
 path = fetch_dataset("username/dataset-name")
 print(f"Dataset available at {path}")
 ```
+
+![Dataset download](example/image1.png)
 
 ### Full-featured workflow
 
