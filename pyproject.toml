@@ -49,7 +49,7 @@ Issues = "https://github.com/psypherion/kagglefetcher/issues"
 Documentation = "https://github.com/psypherion/kagglefetcher#readme"
 
 [tool.setuptools.packages.find]
-where = ["kagglefetcher"]
+where = ["src"]
 
 [tool.black]
 line-length = 88
