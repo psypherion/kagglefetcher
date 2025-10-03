@@ -61,47 +61,6 @@ fetcher.cleanup(cache_path)
 # Or do it all in one step
 dest = fetcher.fetch(keep_cache=False)
 ```
-
----
-
-## Utilities
-
-`kaggle_fetcher.utils` contains:
-
-- `ensure_dir(path)` — safely create directories
-- `clean_path(path)` — normalized, expanded paths
-- `setup_logger(log_dir, log_file, module_name)` — flexible logger setup
-
----
-
-## Type Checking
-
-Use [mypy](https://mypy-lang.org/) for static type checking:
-
-```bash
-pip install mypy
-mypy kagglefetcher
-```
-
----
-
-## Testing
-
-Tests use pytest and mock out network calls for fast, safe runs.
-
-```bash
-pip install pytest
-pytest
-```
-
----
-
-## Contributing
-
-- Format with `black`
-- Type annotate functions
-- Ensure all tests and type checks pass before submitting a PR
-
 ---
 
 ## License
